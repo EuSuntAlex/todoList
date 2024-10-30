@@ -1,0 +1,128 @@
+/* Setări de bază pentru container */
+.container {
+    text-align: center;
+}
+
+h2 {
+    margin: 20px;
+}
+
+.container {
+    grid-column-gap: 20px;
+}
+/* Cardul pentru fiecare topic */
+.topic-card {
+    /* margin: 20px; */
+    margin: 20px 10px 20px 10px;
+    background-color: rgba(211, 211, 211, 0.156);
+    width: 20%;
+    height: 20%;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+    border-radius: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efect de hover pe card */
+.topic-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    z-index: 2;
+}
+
+/* Ascunde descrierea până la hover */
+.description-text {
+    display: none;
+    font-size: 14px;
+    color: #333;
+    margin-top: 10px;
+}
+
+/* Afișează descrierea doar când cardul este hover */
+.topic-card:hover .description-text {
+    display: block;
+}
+
+/* Fundal și stiluri generale pentru tabel */
+table {
+    background-color: rgba(211, 211, 211, 0.156) !important;
+    border-radius: 10px;
+    overflow: hidden;
+    color: #333;
+}
+
+/* Stiluri pentru toate celulele <th> și <td> din tabel */
+table th, 
+table td {
+    background-color: rgba(211, 211, 211, 0.156) !important; /* fundal pentru celulele din tabel */
+    color: #333 !important; /* culoarea textului */
+}
+
+/* Fundal și stiluri specifice pentru <th> cu scope="row" */
+table th[scope="row"] {
+    background-color: rgba(211, 211, 211, 0.2) !important;
+    color: #333 !important;
+}
+
+/* Fundal la hover pentru rândurile din <tbody> */
+table tbody tr:hover {
+    background-color: rgba(211, 211, 211, 0.3) !important;
+    transition: background-color 0.2s ease;
+}
+
+/* Popup container - can be anything you want */
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 60px;
+}
+
+/* Popup Content */
+.popup-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+}
+
+/* Close button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Form styling */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
